@@ -10,6 +10,8 @@ const navigation = {
   ],
   contact: [
     { name: "hello@sinclairhayes.com", href: "mailto:hello@sinclairhayes.com" },
+    { name: "maximillianaustin@ucsb.edu", href: "mailto:maximillianaustin@ucsb.edu" },
+    { name: "Call Us", href: "tel:+5598596415" },
   ],
 }
 
