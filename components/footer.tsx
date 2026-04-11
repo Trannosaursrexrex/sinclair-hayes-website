@@ -9,8 +9,7 @@
       { name: "About", href: "#about" },
     ],
     contact: [
-      { name: "hello@sinclairhayes.com", href: "mailto:hello@sinclairhayes.com" },
-      { name: "maximillianaustin@ucsb.edu", href: "mailto:maximillianaustin@ucsb.edu" },
+      { name: "Email", href: "mailto:hello@sinclairhayes.com" },
       { name: "Call Us", href: "tel:+15598596415" },
     ],
   }
