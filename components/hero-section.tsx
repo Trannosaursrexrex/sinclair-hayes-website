@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 export function HeroSection() {
   return (
@@ -18,20 +19,31 @@ export function HeroSection() {
             book service calls.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            
+            {/* Button 1: Email Routing */}
             <Button
+              asChild
               size="lg"
               className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-6 text-base"
             >
-              Request a Consultation
-              <ArrowRight className="ml-2 w-4 h-4" />
+              <Link href="mailto:hello@sinclairhayes.com">
+                Request a Consultation
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </Link>
             </Button>
+
+            {/* Button 2: Jump to Process Section */}
             <Button
+              asChild
               variant="outline"
               size="lg"
               className="px-8 py-6 text-base border-border text-foreground hover:bg-secondary"
             >
-              See Our Work
+              <Link href="#process">
+                Our Process
+              </Link>
             </Button>
+
           </div>
         </div>
       </div>
