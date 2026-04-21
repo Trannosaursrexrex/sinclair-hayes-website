@@ -26,7 +26,7 @@ export function HeroSection() {
               size="lg"
               className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-6 text-base"
             >
-              <Link href="mailto:hello@sinclairhayes.com">
+              <Link href="#contact">
                 Request a Consultation
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
