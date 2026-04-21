@@ -13,10 +13,11 @@ export function ContactSection() {
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
+    const form = event.currentTarget
     setStatus("submitting")
     setMessage("")
 
-    const formData = new FormData(event.currentTarget)
+    const formData = new FormData(form)
     const payload = {
       name: String(formData.get("name") ?? "").trim(),
       phone: String(formData.get("phone") ?? "").trim(),
@@ -38,7 +39,7 @@ export function ContactSection() {
 
       setStatus("success")
       setMessage("Thank you. We will contact you shortly.")
-      event.currentTarget.reset()
+      form.reset()
     } catch (error) {
       setStatus("error")
       setMessage(
