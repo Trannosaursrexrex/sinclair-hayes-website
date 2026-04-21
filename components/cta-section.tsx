@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 export function CTASection() {
   return (
@@ -14,11 +15,14 @@ export function CTASection() {
             for your business.
           </p>
           <Button
+            asChild
             size="lg"
             className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-6 text-base"
           >
-            Schedule a Call
-            <ArrowRight className="ml-2 w-4 h-4" />
+            <Link href="#contact">
+              Schedule a Call
+              <ArrowRight className="ml-2 w-4 h-4" />
+            </Link>
           </Button>
         </div>
       </div>

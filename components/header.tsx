@@ -52,12 +52,21 @@ export function Header() {
             >
               About
             </Link>
+            <Link
+              href="#contact"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Contact
+            </Link>
           </nav>
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-              Get Started
+            <Button
+              asChild
+              className="bg-primary text-primary-foreground hover:bg-primary/90"
+            >
+              <Link href="#contact">Get Started</Link>
             </Button>
           </div>
 
@@ -107,8 +116,20 @@ export function Header() {
               >
                 About
               </Link>
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 w-fit">
-                Get Started
+              <Link
+                href="#contact"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Contact
+              </Link>
+              <Button
+                asChild
+                className="bg-primary text-primary-foreground hover:bg-primary/90 w-fit"
+              >
+                <Link href="#contact" onClick={() => setMobileMenuOpen(false)}>
+                  Get Started
+                </Link>
               </Button>
             </nav>
           </div>

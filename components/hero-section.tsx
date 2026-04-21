@@ -39,9 +39,16 @@ export function HeroSection() {
               size="lg"
               className="px-8 py-6 text-base border-border text-foreground hover:bg-secondary"
             >
-              <Link href="#process">
-                Our Process
-              </Link>
+              <Link href="#process">Our Process</Link>
+            </Button>
+
+            <Button
+              asChild
+              variant="outline"
+              size="lg"
+              className="px-8 py-6 text-base border-border text-foreground hover:bg-secondary"
+            >
+              <Link href="#contact">Contact</Link>
             </Button>
 
           </div>

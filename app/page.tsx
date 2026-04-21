@@ -5,6 +5,7 @@ import { ResultsSection } from "@/components/results-section"
 import { ProcessSection } from "@/components/process-section"
 import { AboutSection } from "@/components/about-section"
 import { CTASection } from "@/components/cta-section"
+import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <ProcessSection />
         <AboutSection />
         <CTASection />
+        <ContactSection />
       </main>
       <Footer />
     </>

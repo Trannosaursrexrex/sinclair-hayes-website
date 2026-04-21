@@ -7,6 +7,7 @@
       { name: "Process", href: "#process" },
       { name: "Results", href: "#results" },
       { name: "About", href: "#about" },
+      { name: "Contact", href: "#contact" },
     ],
     contact: [
       { name: "Email", href: "mailto:hello@sinclairhayes.com" },
